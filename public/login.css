@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins', sans-serif;
+    box-sizing: border-box; 
+/* the box-sizing enables  include the padding and border in the width and height of an element. you can
+include the div’s border as a part of the total height and width
+*/
+     
+}
+
+:root{
+    --background: #c5740aa2;
+}
+
+
+.container{
+    width: 100%;
+    height: 100vh; /*the css value vh shows 1% of viewport height */
+    background-image: linear-gradient(rgba(226, 143, 34, 0.548), rgba(226, 143, 34, 0.548)), url(team\ work.jpg);
+    background-position: center;
+    background-size: cover;/*Scales the image (while preserving its ratio) to the smallest possible size to fill the container (that is: both its height and width completely cover the container), leaving no empty space. If the proportions of the background differ from the element, the image is cropped either vertically or horizontally.*/
+    position: relative;
+    
+}
+
+
+.form-box{
+    width: 90%;
+    max-width: 450px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    padding: 50px 60px 70px ;
+    text-align: center;
+}
+
+
+.form-box h1{
+    font-size: 30px;
+    margin-bottom: 60px;
+    color: var(--background);
+    position: relative;
+
+}
+
+
+.form-box h1::after{/* dont know what pseudo elements are */
+    content: '';
+    width: 30px;
+    height: 4px;
+    border-radius: 3px;
+    background: rgba(197, 116, 10, 0.637);
+    position: absolute;
+    bottom: -12px;
+    left: 50%;
+    transform: translateX(-50%);/* dont know what transform is */
+}
+
+
+.input-field{
+    background: #eaeaea;
+    margin: 15px 0;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    max-height: 65px;
+    overflow: hidden;
+    transition: max-height 0.7s;
+}
+
+
+input{
+    width: 100%;
+    background: transparent;
+    border: 0;
+    outline: 0;/* dont understand outline */
+    padding: 18px 15px ;
+}
+.input-field i{
+    margin-left: 15px;
+    color: #999;
+}
+
+
+form p{
+    text-align: left;
+    font-size: 13px;
+}
+
+form p a{
+    text-decoration: none;
+    color: var(--background);
+}
+.btn-field{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.btn-field button{
+    flex-basis: 48%;
+    background: var(--background);
+    color: #fff;
+    height: 40px;
+    border-radius: 20px;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    transition: 1s;
+}
+.input-group{
+    height: 280px;
+}
+.btn-field button.disable{
+    background: #eaeaea;
+    color: #555;
+}
+
+.container .form-box .error-message{
+    color: red;
+    text-transform: capitalize;
+    display: none;
+    transition: 1s;
+}
+i{
+    margin-right: 6px;
+}
