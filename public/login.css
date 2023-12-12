@@ -111,7 +111,7 @@ form p a{
     transition: 1s;
 }
 .input-group{
-    height: 280px;
+    height: 300px;
 }
 .btn-field button.disable{
     background: #eaeaea;
@@ -127,3 +127,14 @@ form p a{
 i{
     margin-right: 6px;
 }
+
+/* .container .error-message{
+    display: none;
+    font-size: 19px;
+    position: absolute;
+    color: red;
+    text-transform: capitalize;
+    top: 20px;
+    right: 160px;
+    transition: 1s;
+} */
