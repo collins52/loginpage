@@ -3,27 +3,21 @@
     padding: 0;
     font-family: 'poppins', sans-serif;
     box-sizing: border-box; 
-/* the box-sizing enables  include the padding and border in the width and height of an element. you can
-include the div’s border as a part of the total height and width
-*/
-     
 }
 
 :root{
     --background: #c5740aa2;
 }
 
-
 .container{
     width: 100%;
-    height: 100vh; /*the css value vh shows 1% of viewport height */
+    height: 100vh;
     background-image: linear-gradient(rgba(226, 143, 34, 0.548), rgba(226, 143, 34, 0.548)), url(team\ work.jpg);
     background-position: center;
-    background-size: cover;/*Scales the image (while preserving its ratio) to the smallest possible size to fill the container (that is: both its height and width completely cover the container), leaving no empty space. If the proportions of the background differ from the element, the image is cropped either vertically or horizontally.*/
+    background-size: cover;
     position: relative;
     
 }
-
 
 .form-box{
     width: 90%;
@@ -37,7 +31,6 @@ include the div’s border as a part of the total height and width
     text-align: center;
 }
 
-
 .form-box h1{
     font-size: 30px;
     margin-bottom: 60px;
@@ -45,7 +38,6 @@ include the div’s border as a part of the total height and width
     position: relative;
 
 }
-
 
 .form-box h1::after{/* dont know what pseudo elements are */
     content: '';
@@ -59,7 +51,6 @@ include the div’s border as a part of the total height and width
     transform: translateX(-50%);/* dont know what transform is */
 }
 
-
 .input-field{
     background: #eaeaea;
     margin: 15px 0;
@@ -71,7 +62,6 @@ include the div’s border as a part of the total height and width
     transition: max-height 0.7s;
 }
 
-
 input{
     width: 100%;
     background: transparent;
@@ -79,6 +69,7 @@ input{
     outline: 0;/* dont understand outline */
     padding: 18px 15px ;
 }
+
 .input-field i{
     margin-left: 15px;
     color: #999;
@@ -94,11 +85,13 @@ form p a{
     text-decoration: none;
     color: var(--background);
 }
+
 .btn-field{
     width: 100%;
     display: flex;
     justify-content: space-between;
 }
+
 .btn-field button{
     flex-basis: 48%;
     background: var(--background);
@@ -110,9 +103,11 @@ form p a{
     cursor: pointer;
     transition: 1s;
 }
+
 .input-group{
     height: 300px;
 }
+
 .btn-field button.disable{
     background: #eaeaea;
     color: #555;
@@ -124,17 +119,7 @@ form p a{
     display: none;
     transition: 1s;
 }
+
 i{
     margin-right: 6px;
 }
-
-/* .container .error-message{
-    display: none;
-    font-size: 19px;
-    position: absolute;
-    color: red;
-    text-transform: capitalize;
-    top: 20px;
-    right: 160px;
-    transition: 1s;
-} */
